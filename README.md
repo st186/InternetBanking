@@ -11,11 +11,11 @@ The project’s primary goals consist of:
 
 > A robust and effective web based online banking system.
 
->Extending functionality without compromising the security.
+>Extending functionality without compromising the security(SHA-1 (Secure Hash Algorithm 1) ).
 
 >Personal banking services that gives you complete control over all your banking demands online.
 
->Simple and easy user interface to work with.
+>Simple and easy UI.
 
 Online Banking features:
 
@@ -51,8 +51,6 @@ Security:
 
 >Passwords are stored as encrypted hashes with an additional random salt for added security.
 
-Note: If we talk about security,above mentioned points would provide no security at all but it will work for beginners. Being into web app pentesting,I very well know this project will not be considered secure. It needs atleast a more effective filtering mechanism, better hashing algorithm, a better salting procedure for storing passwords and some other things too.
-
 Database:
 
 >The database contains customer, staff & admin tables.
@@ -80,9 +78,9 @@ Usage:
 
 2.Copy all the files to c:/xampp/htdocs/banking/
 
-3.Create a db named as 'bnak_db' and import the bank_db.sql from phpMyAdmin.
+3.Create a db named as 'bank_db' and import the bank_db.sql from phpMyAdmin.
 
-4.change the password in _inc/dbconn.php file accordingly.
+4.change the password in _inc/dbconn.php file accordingly and make it empty if you are using XAMPP).
 
 5.visit localhost/banking (customer index page)
 
